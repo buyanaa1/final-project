@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EV Battery Explorer</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="style-types.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+</head>
+  <body>
+    <nav class="nav">
+      <input type="checkbox" id = "check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo"> EV Battery Explorer</label>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a class="active" href="types.html">Types</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>  
+    </nav>
+    <div>
+      <h1 class = "types-title"> BATTERY TYPES</h1>
+    </div>  
+    <div class="filter-bar">
+        <input type="text" id="searchInput" placeholder="Search battery types..." />
+          <select id="priceFilter">
+            <option value="">All Prices</option>
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+          </select>
+
+          <select id="lifeFilter">
+            <option value="">All Life-Spans</option>
+            <option value="short">Short</option>
+            <option value="medium">Medium</option>
+            <option value="long">Long</option>
+            <option value="very long">Very long</option>
+          </select>
+    </div> 
+    <div class = "content">
+        <div class = "container swiper">
+            <div class = "wrapper">
+                <div class="card-list swiper-wrapper">
+                    <div class="card swiper-slide" data-price="high" data-life="long">
+                <div class = "card-image">
+                  <img src = "lithium.png" alt="Battery">
+                </div>
+                <div class="card-content">
+                  <h3 class = "card-title"> Lithium-Ion</h3>
+                  <p class = "card-text"> Lightweight, rechargeable, high energy density </p>
+                  <div class = "card-footer">
+                    <a href="lithium-ion.html" class="card-button">Read more</a>
+                  </div>
+                </div>
+                    </div>
+                    <div class="card swiper-slide" data-price="high" data-life="very long">
+                <div class = "card-image">
+                  <img src = "solid-state.png" alt="Battery">
+                </div>
+                <div class="card-content">
+                  <h3 class = "card-title"> Solid-State</h3>
+                  <p class = "card-text"> Safer, solid electrolyte, high potential </p>
+                  <div class = "card-footer">
+                    <a href="solid-state.html" class="card-button">Read More</a>
+                  </div>
+                </div>
+                    </div>
+                    <div class="card swiper-slide" data-price="medium" data-life="medium">
+                <div class = "card-image">
+                  <img src = "nickel.png" alt="Battery">
+                </div>
+                <div class="card-content">
+                  <h3 class = "card-title"> Nickel-Metal Hydride</h3>
+                  <p class = "card-text"> Reliable, moderate density, rechargeable</p>
+                  <div class = "card-footer">
+                    <a href="nickel.html" class="card-button">Read More</a>
+                  </div>
+                </div>
+                    </div>
+                    <div class="card swiper-slide" data-price="low" data-life="short">
+                <div class = "card-image">
+                  <img src = "lead-acid.png" alt="Battery">
+                </div>
+                <div class="card-content">
+                  <h3 class = "card-title"> Lead-Acid</h3>
+                  <p class = "card-text"> Heavy, cheap, for starting engines </p>
+                  <div class = "card-footer">
+                    <a href="lead-acid.html" class="card-button">Read More</a>
+                  </div>
+                </div>
+                    </div>
+                    <div class="card swiper-slide" data-price="high" data-life="very long">
+                <div class = "card-image">
+                  <img src = "capacitor.png" alt="Battery">
+                </div>
+                <div class="card-content">
+                  <h3 class = "card-title"> Ultracapacitors</h3>
+                  <p class = "card-text"> Fast charge, low energy storage </p>
+                  <div class = "card-footer">
+                    <a href="capacitor.html" class="card-button">Read More</a>
+                  </div>
+                </div>
+                    </div>
+                    <div class="card swiper-slide" data-price="medium" data-life="very long">
+                <div class = "card-image">
+                  <img src = "lihium-iron.png" alt="Battery">
+                </div>
+                <div class="card-content">
+                  <h3 class = "card-title"> Lithium Iron Phosphate</h3>
+                  <p class = "card-text"> Stable, safe, long cycle life</p>
+                  <div class = "card-footer">
+                    <a href="lithium-iron.html" class="card-button">Read More</a>
+                  </div>
+                </div>
+                    </div>           
+                </div>    
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+            </div>
+        </div>  
+    </div> 
+    <div class="nav-footer">
+    <p> @copyright</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src = "script.js"></script>
+  </body>
+</html>    
